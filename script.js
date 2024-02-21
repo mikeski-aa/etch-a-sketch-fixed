@@ -59,10 +59,11 @@ btn.addEventListener('click', function() {
 //new grid function
 function newGridSize() {
     let input = +prompt('Enter how many squares per side you\'d like to see');
-    if (input >= 100) {
-        alert('ERROR - you must enter a number below 100!');
+    if (input >= 100 || isNaN(input)) {
+        alert('ERROR - you must enter a NUMBER below 100!');
         return startingSize;
     } else {
+    console.log(input);
     startingSize = input;
     return startingSize;
     }
