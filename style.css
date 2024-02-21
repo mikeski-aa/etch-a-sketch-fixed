@@ -1,0 +1,33 @@
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(219, 219, 219);
+}
+
+button {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    background: white;
+    border-color: blue;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    flex-grow: 1;
+    height: 960px;
+    
+    
+}
+
+.container div {
+    display: flex;
+    outline: 1px solid black;
+    background: rgb(255, 255, 255);
+    
+}
+
